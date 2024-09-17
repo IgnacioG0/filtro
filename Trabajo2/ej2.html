@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML + Javascript</title>
+</head>
+<body>
+    <main class="full-container">
+          
+    <form>
+        <h2>Formulario</h2> 
+        <div>
+            <input class="controls" type="text" id="name" name="name" maxlength="12" placeholder="Name" required/>
+        </div>
+        <div>
+            <input class="controls" type="email" id="email" name="email" maxlength="30" placeholder="Email" required/>
+        </div>
+        <div>
+            <input class="controls" type="number" id="phone" name="phone" maxlength="15" placeholder="Phone" required/>
+        </div>
+        <div>
+            <input class="controls" type="number" id="id" name="id" maxlength="12" placeholder="Id" required/>
+        </div>
+        <div>
+            <button class="save"  type="submit">Guardar</button>
+        </div>
+    </form>
+
+
+    <h1>Lista de Usuarios</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Id</th>
+            </tr>
+        </thead>
+        <tbody id="student_table"></tbody>
+
+        <div>
+            <input type="text" id="searching" name="searching" maxlength="12" placeholder="Item to filter.." required/>
+            <button type="button" id="searchButton">Buscar</button>
+            <button type="button" id="resetButton">Restablecer</button>
+        </div>
+    </table>
+
+    <div id="pagButton">
+        <button type="button" id="prevButton">Anterior</button>
+        <span id="pageNumber">1</span>
+        <button type="button" id="nextButton">Siguiente</button>
+    </div>
+
+
+
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
